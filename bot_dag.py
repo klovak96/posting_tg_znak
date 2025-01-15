@@ -17,7 +17,7 @@ def run_():
             "x-rapidapi-host": "quotes15.p.rapidapi.com"
         }
         TOKEN = os.environ.get('BOT_TOKEN')
-        CHANNEL_ID = '@TestPost96'
+        CHANNEL_ID = '@tvoy_znakkk'
         bot = telebot.TeleBot(TOKEN)
 
         while True:

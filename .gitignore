@@ -3,3 +3,4 @@ logs/
 pddata/
 pbot.ipynb
 .env
+venv/
