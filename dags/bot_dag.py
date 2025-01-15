@@ -17,7 +17,7 @@ def run_():
             "x-rapidapi-host": "quotes15.p.rapidapi.com"
         }
         TOKEN = os.environ.get('BOT_TOKEN')
-        CHANNEL_ID = '@tvoy_znakkk'
+        CHANNEL_ID = '@TestPost96'
         bot = telebot.TeleBot(TOKEN)
 
         while True:
@@ -25,7 +25,7 @@ def run_():
                 response = requests.get(url, headers=headers, params=querystring)
                 new_post = response.json()
                 post_content = new_post['content']
-                if len(post_content) < 100 or re.search(r'\bроссия\b', post_content, re.IGNORECASE):
+                if len(post_content) < 100 or re.search(r'Россия|России', post_content, re.IGNORECASE):
                     break
             except Exception as e:
                 logging.error(f"Ошибка при запросе: {e}")
